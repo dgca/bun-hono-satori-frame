@@ -46,7 +46,7 @@ export const handlePost = routeHandler(async (c) => {
 
   // Otherwise, we show the result
   const userChoice =
-    fcData?.untrustedData.buttonIndex === 1 ? "Heads" : "Tails";
+    fcData?.untrustedData.buttonIndex === 2 ? "Heads" : "Tails";
   const coinFlip = Math.random() < 0.5 ? "Heads" : "Tails";
   const didWin = userChoice === coinFlip;
 
