@@ -4,15 +4,10 @@ import { renderFrameDocument } from "@/lib/renderFrameDocument";
 import { parseFrameResponse } from "@/lib/parseFrameResponse";
 import { routeHandler } from "@/lib/routeHandler";
 
-import { rootFrameContent } from "./shared/rootFrameContent";
 import { Card } from "./shared/Card";
 
 export const handlePost = routeHandler(async (c) => {
   const url = parseUrl(c.req.url);
-
-  if (!["flip-coin", "result"].includes(url.searchParams.step)) {
-    return c.html(rootFrameContent);
-  }
 
   const fcData = parseFrameResponse(await c.req.json());
   const name =

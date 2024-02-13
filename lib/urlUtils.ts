@@ -1,18 +1,3 @@
-export function buildUrl(
-  url: string | URL,
-  searchParams?: Record<string, string>
-) {
-  const urlObj = typeof url === "string" ? new URL(url) : url;
-
-  if (searchParams) {
-    for (const [key, value] of Object.entries(searchParams)) {
-      urlObj.searchParams.set(key, value);
-    }
-  }
-
-  return urlObj.toString();
-}
-
 export function buildFullUrl(
   path: string,
   searchParams?: Record<string, string>
@@ -48,7 +33,7 @@ export function parseUrl(url: string | URL) {
 
       return parseUrl(nextObj.toString());
     },
-    nextPath(path: string) {
+    setPathname(path: string) {
       const nextObj = new URL(url);
       nextObj.pathname = path;
       return parseUrl(nextObj.toString());
