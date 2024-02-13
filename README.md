@@ -1,4 +1,4 @@
-# bun-hono-xstate-frames
+# bun-hono-satori-frame
 
 To install dependencies:
 
