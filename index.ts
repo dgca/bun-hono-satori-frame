@@ -9,7 +9,7 @@ const app = new Hono();
 app.get("/", handleGet);
 app.post("/", handlePost);
 
-const port = process.env.port || 3030;
+const port = process.env.PORT || 3030;
 console.log(`Starting server on port ${port}...`);
 
 Bun.serve({
