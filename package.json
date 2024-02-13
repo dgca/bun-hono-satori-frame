@@ -2,6 +2,10 @@
   "name": "bun-hono-satori-frame",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "start": "bun index.ts",
+    "dev": "bun --watch index.ts"
+  },
   "dependencies": {},
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.0",
