@@ -46,13 +46,9 @@ This is where the utilities live that make it easy to build the frame handlers. 
 
 ### `<Box />`
 
-`import { Box } from '@/lib/components`
-
 This is a simple wrapper around the `div` element with default styles to make Satori happy.
 
 ### `sx(...styles: Array<CSSProperties | undefined>): CSSProperties`
-
-`import { sx } from '@/lib/components`
 
 This function lets you compose style objects. It takes one or more style object and merges them into one object.
 
