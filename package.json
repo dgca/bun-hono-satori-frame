@@ -2,7 +2,7 @@
   "name": "bun-hono-satori-frame",
   "module": "index.ts",
   "type": "module",
-  "dependencies": { "react-dom": "^18.2.0" },
+  "dependencies": {},
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.0",
     "@types/bun": "latest",
@@ -10,7 +10,7 @@
     "@types/react-dom": "^18.2.19",
     "hono": "^4.0.0",
     "react": "^18.2.0",
-    "react-dom/server": "react-dom/server",
+    "react-dom": "^18.2.0",
     "satori": "^0.10.13",
     "type-fest": "^4.10.2"
   },
